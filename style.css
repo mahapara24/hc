@@ -1,0 +1,192 @@
+#nocode{
+background-image: url(./media/ai-agents.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#market{
+    background-image: url( ./media/marketplace.jpeg ); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+#privacy{
+    background-image: url(./media/privacy.jpeg);
+    background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#main{
+    background-image: url(./media/logo-nobg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #33e1f1;
+    padding: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    color: #33e1f1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #33e1f1;
+}
+
+.faq-answer {
+    display: none;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.faq-answer:not([style*="display: none"]) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FAQ Active State */
+.faq-question.active {
+    color: #33e1f1;
+    position: relative;
+}
+
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+}
+
+/* Make sure content appears above particles */
+body > div:not(#particles-js) {
+    position: relative;
+    z-index: 2;
+}
+/* chart css */
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width of the parent */
+    margin-top: 100px;
+    gap: 40px;
+}
+
+/* Canvas for the pie chart */
+#myPieChart {
+    width: 35% !important; /* Set the width of the pie chart to 40% */
+    height: auto !important; /* Maintain aspect ratio */
+    border: 8px solid white;
+    border-radius: 50%;
+    position: relative;
+    rotate: 220deg;
+}
+
+/* Legend styling */
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Space between chart and legend */
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Space between legend items */
+    color: wheat;
+}
+.legend-color-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Space between color box and label */
+    border-radius: 2px;
+}
+/* scrool animation */
+.riseup{
+    animation: glow 2s infinite alternate ease-in-out;
+}
+@keyframes glow {
+    from{
+        text-shadow: rgb(48, 165, 178) 0px 0px 23.6378px, rgba(77, 187, 199, 0.365) 0px 0px 3.63784px;
+    }to{
+        text-shadow: rgb(46, 159, 171) 0px 0px 21.0098px, rgba(77, 187, 199, 0.1) 0px 0px 1.00979px;
+    }
+}
+/* .AIAgent{
+    background-image: url();
+} */
+@media only screen and (max-width:500px) {
+    .chart-container {
+        flex-direction: column;
+          
+    }
+    #myPieChart {
+        width:50% !important; 
+    }
+    
+    /* Legend styling */
+    .chart-legend {
+        width: 80%;
+    }
+       
+}
