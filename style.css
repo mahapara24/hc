@@ -185,8 +185,8 @@ body > div:not(#particles-js) {
           
     }
     .flip-card{
-        width:180px;
-        height:180px;
+        width:150px;
+        height:150px;
     }
     #myPieChart {
         width:70% !important; 
