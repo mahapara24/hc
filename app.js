@@ -183,7 +183,7 @@ const myPieChart = new Chart(ctx, {
         ],
         datasets: [{
             label: 'Distribution',
-            data: [65, 1,3, 10, 21 ], // Ensure the data matches the labels
+            data: [65, ,3, 10, 21 ], // Ensure the data matches the labels
             backgroundColor: [
                 'rgb(20, 122, 138)',
                 'rgb(255, 255, 255)',
@@ -218,14 +218,17 @@ const myPieChart = new Chart(ctx, {
                 color: 'white', // Change the color of the labels
                 formatter: (value, context) => {
                     const total = context.chart.data.datasets[0].data.reduce((acc, val) => acc + val, 0);
-                    const percentage = Math.floor(((value / total) * 100).toFixed(2)) + '%';
-                    return percentage; // Return the percentage
+                    const percentage = Math.floor(((value / total) * 100).toFixed(2)) ;
+                    if(percentage>2){
+                      console.log(percentage)
+                      return percentage+"%";
+                    } // Return the percentage
                 },
                 anchor: 'center', // Center the label in the segment
                 align: 'center', // Align the label in the center
                 font: {
                     weight: 'bold', // Make the font bold
-                    size: '16' // Set the font size
+                    size: '20' // Set the font size
                 },
                 rotation: 140 // Rotate the label by 90 degrees
             }
