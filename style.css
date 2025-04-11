@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.roboto-mono-style {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    
+    font-style: normal;
+    
+  }
+
+  .inter-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 68.3px;
+    line-height: 81.96px;
+    font-style: normal;
+  }
+  .inter-paragraph {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 23.94px;
+    line-height: 34.713px;
+    font-style: normal;
+  }
+  .roboto-mono-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 23.4px;
+    line-height: 35.1px;
+    font-style: normal;
+  }
+
+  .inter-heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 61.47px;
+    line-height: 76.8375px;
+    font-style: normal;
+  }
+
 #nocode{
 background-image: url(./media/ai-agents.jpg);
 background-position: center;
