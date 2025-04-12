@@ -15,11 +15,11 @@
      <div>
         <div class="flex justify-center items-center w-full flex-col mt-5 ">
             <nav class="flex justify-between bg-black/30 backdrop-blur-lg shadow-lg items-center border-2  border-[#33e1f1] rounded-4xl p-2 w-[90%] md:w-[70%] lg:w-[40%] px-4 relative top-5 relative z-50">
-                <div class="w-[40px]"><img class="w-full" src="./media/logo-cropped.png" alt=""></div>
+                <div class="w-[40px] cursor-pointer" onclick='window.location.reload()'><img class="w-full" src="./media/logo-cropped.png" alt=""></div>
                 <ul class="hidden md:flex text-center text-lg md:text-2xl gap-4 md:gap-12 text-[#33e1f1] uppercase">
-                    <li class="hover:text-white"><a href="">FAQs</a></li>
-                    <li class="hover:text-white"><a href="">Docs</a></li>
-                    <li class="hover:text-white"><a href="">Launch Platform</a></li>
+                    <li class="hover:text-white"><a href="#faq">FAQs</a></li>
+                    <li class="hover:text-white"><a href="https://shadowcore-ai.gitbook.io/shadowcore-ai-docs">Docs</a></li>
+                    <li class="hover:text-white"><a href="" onclick='window.location.reload()'>Launch Platform</a></li>
                 </ul>
                 <div class="flex md:hidden w-[30px] cursor-pointer" onclick="navToggle()">
                     <img src="./media/burger-bar.png" class="w-full" alt="">
@@ -28,27 +28,27 @@
             <!-- sidebar -->
              <div class="p-4 w-full  inset-0 bg-black backdrop-blur-lg h-screen hidden gap-20 top-0 lef-0 fixed z-50 bg-black flex-col" id="sidebar">
                 <div class="flex justify-between items-center">
-                <div class="w-[40px]"><img class="w-full" src="./media/logo-cropped.png" alt=""></div>
+                <div class="w-[40px] cursor-pointer" onclick='window.location.reload()'><img class="w-full" src="./media/logo-cropped.png" alt=""></div>
                 <div class="flex md:hidden w-[20px] cursor-pointer"  onclick="navToggle()">
                     <img src="./media/close (2).png" class="w-full" alt="">
                 </div>
                 </div>
                 <ul class="flex text-center justify-center w-full items-center mt-10 text-lg flex-col md:text-2xl gap-6 md:gap-12 text-white capitalize font-bold">
-                    <li class="hover:text-[#33e1f1]"><a href="">FAQs</a></li>
-                    <li class="hover:text-[#33e1f1]"><a href="">Docs</a></li>
-                    <li class="bg-white w-[80%] max-w-[60%] text-black py-5 rounded-full"><a href="">Launch Platform</a></li>
+                    <li class="hover:text-[#33e1f1]"><a href="#faq">FAQs</a></li>
+                    <li class="hover:text-[#33e1f1]"><a href="https://shadowcore-ai.gitbook.io/shadowcore-ai-docs">Docs</a></li>
+                    <li class="bg-white w-[80%] max-w-[60%] text-black py-5 rounded-full"><a href="" onclick='window.location.reload()'>Launch Platform</a></li>
                 </ul>
              </div>
             <div class="flex flex-col justify-between items-center gap-4 md:gap-8 mt-10" id="main">
-                <div class="justify-center items-center text-4xl text-white text-center bg-black/40">
+                <div class="justify-center items-center text-4xl text-white text-center  bg-black/60">
                     <h1 class="text-white text-5xl mt-16 font-bold">Build AI Agents</h1>
                     <h2 class="text-[#33e1f1]  text-[50px]  md:text-5xl font-bold">with <span class="uppercase"> ShadowCore AI</span></h2>
                 </div>
-                <div class="mt-8 md:mt-12 w-full md:w-[85%] text-center font-bold">
+                <div class="mt-20 w-full md:w-[85%] text-center font-bold">
                     <h1 class="text-white text-lg md:text-[28px]">Empowering Multichain AI Agents with privacy and scalability</h1>
                 </div>
-                <div class="mt-12 md:mt-24 border-2 border-[#33e1f1] text-2xl md:text-4xl p-2 text-white bg-black shadow-lg  transition-all duration-300 hover:shadow-[0_0_50px_#33e2f2]  outline-0 rounded-md p-4">
-                    <button class="cursor-pointer">Get Started</button>
+                <div class="mt-18 md:mt-24 border-2 border-[#33e1f1] text-2xl md:text-4xl p-2 text-white bg-black shadow-lg  transition-all duration-300 hover:shadow-[0_0_50px_#33e2f2]  outline-0 rounded-md p-4">
+                    <button class="cursor-pointer" onclick='window.location.href="https://t.me/ShadowCoreAi"'>Get Started</button>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <main class="bg-black/30 backdrop-blur-lg shadow-lg mt-12 md:mt-20 w-full mx-auto px-4 grid place-items-center gap-20 md:gap-10">
+        <main class="bg-black/30 backdrop-blur-lg shadow-lg mt-12 md:mt-20 w-full mx-auto px-4 grid place-items-center gap-20 md:gap-10" id='faq'>
             <div class="w-full lg:w-[80%] text-left py-10">
                 <h1 class="text-white text-3xl md:text-7xl  font-bold">Have Questions? We have Answers</h1>
             </div>
@@ -82,8 +82,8 @@
                 </div>
             </div>
         </div>
-          <div id="market" class="shadow-lg w-full lg:w-[80%] mt-6 md:mt-10 transition-all duration-300 hover:shadow-[0_0_50px_#33e2f2] border-1 border-[#33e1f1] pb-20 rounded-2xl nocard">
-            <div class="flex flex-col  w-full p-6  md:py-20 md:px-10  gap-4 bg-black/70 rounded-2xl">
+          <div id="market" class="shadow-lg w-full lg:w-[80%] mt-6 md:mt-10 transition-all duration-300 hover:shadow-[0_0_50px_#33e2f2] border-1 border-[#33e1f1]  rounded-2xl nocard">
+            <div class="flex flex-col  w-full p-6 pb-20  md:py-20 md:px-10  gap-4 bg-black/70 rounded-2xl">
                 <div class='grid gap-4'>
                     <h1 class="text-white text-2xl md:text-3xl lg:text-5xl font-bold">Marketplace</h1>
                     <h2 class="text-white text-lg md:text-2xl">Discover and Deploy AI Agents</h2>
@@ -97,8 +97,8 @@
                 </div>
             </div>
              </div>
-             <div id="privacy" class="shadow-lg w-full lg:w-[80%] transition-all duration-300 hover:shadow-[0_0_50px_#33e2f2] border-1 pb-20 mt-6 md:mt-10 border-[#33e1f1] rounded-2xl nocard">
-            <div class="flex flex-col   w-full p-6 md:py-20 mfpx-10 gap-4 bg-black/70 rounded-2xl ">
+             <div id="privacy" class="shadow-lg w-full lg:w-[80%] transition-all duration-300 hover:shadow-[0_0_50px_#33e2f2] border-1  mt-6 md:mt-10 border-[#33e1f1] rounded-2xl nocard">
+            <div class="flex flex-col pb-20  w-full p-6 md:py-20 mfpx-10 gap-4 bg-black/70 rounded-2xl ">
                 <div class='grid gap-4'>
                     <h1 class="text-white text-2xl md:text-3xl lg:text-5xl font-bold">Privacy</h1>
                     <h2 class="text-white text-lg md:text-2xl">Your Data, Your Control</h2>
@@ -411,16 +411,16 @@
         <!-- logo -->
         <div class="mt-7 gap-4">
             <div class="flex gap-4 items-center">
-                <div class="text-white">
+                <div class="text-white" onclick='window.location.href="https://t.me/ShadowCoreAi"'>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-2xl cursor-pointer hover:text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
                 </div>
-                <div class="text-white">
+                <div class="text-white" onclick='window.location.href="https://x.com/shadow_coreai?s=21"'>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-2xl cursor-pointer hover:text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
                 </div>
-                <div class="text-white">
+                <div class="text-white" onclick='window.location.href="https://shadowcore-ai.gitbook.io/shadowcore-ai-docs"'>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="text-2xl cursor-pointer hover:text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.513 1.097c-.645 0-1.233.34-2.407 1.017L3.675 5.82A7.233 7.233 0 0 0 0 12.063v.236a7.233 7.233 0 0 0 3.667 6.238L7.69 20.86c2.354 1.36 3.531 2.042 4.824 2.042 1.292.001 2.47-.678 4.825-2.038l4.251-2.453c1.177-.68 1.764-1.02 2.087-1.579.323-.56.324-1.24.323-2.6v-2.63a1.04 1.04 0 0 0-1.558-.903l-8.728 5.024c-.587.337-.88.507-1.201.507-.323 0-.616-.168-1.204-.506l-5.904-3.393c-.297-.171-.446-.256-.565-.271a.603.603 0 0 0-.634.368c-.045.111-.045.282-.043.625.002.252 0 .378.025.494.053.259.189.493.387.667.089.077.198.14.416.266l6.315 3.65c.589.34.884.51 1.207.51.324 0 .617-.17 1.206-.509l7.74-4.469c.202-.116.302-.172.377-.13.075.044.075.16.075.392v1.193c0 .34.001.51-.08.649-.08.14-.227.224-.522.394l-6.382 3.685c-1.178.68-1.767 1.02-2.413 1.02-.646 0-1.236-.34-2.412-1.022l-5.97-3.452-.043-.025a4.106 4.106 0 0 1-2.031-3.52V11.7c0-.801.427-1.541 1.12-1.944a1.979 1.979 0 0 1 1.982-.001l4.946 2.858c1.174.679 1.762 1.019 2.407 1.02.645 0 1.233-.34 2.41-1.017l7.482-4.306a1.091 1.091 0 0 0 0-1.891L14.92 2.11c-1.175-.675-1.762-1.013-2.406-1.013Z"></path></svg>
                 </div>
-                <div class="text-white">
+                <div class="text-white" onclick='window.location.href="mailto:shadowcoreairc@gmail.com"'>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-2xl cursor-pointer hover:text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg>
                 </div>
         </div>

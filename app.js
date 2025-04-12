@@ -254,6 +254,12 @@ function updateImageSource() {
   if (window.matchMedia("(max-width: 767px)").matches) {
       // Phone
       image.src = './media/750px 450px.svg';
+      gsap.to('#company',{
+        x:"-900px",
+        duration:25,
+        repeat:-1,
+        ease:"power.inOut"
+     })
   } else if (window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches) {
       // Tablet
       image.src = './media/1024px 768px.svg';

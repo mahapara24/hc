@@ -180,6 +180,9 @@ body > div:not(#particles-js) {
     background-image: url();
 } */
 @media only screen and (max-width:500px) {
+    #main{
+    background-size: 300px 400px;
+    }
     .chart-container {
         flex-direction: column;
           
